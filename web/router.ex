@@ -22,6 +22,8 @@ defmodule PhoenixChat.Router do
       get "/", AuthenticationController, :index
       post "/authenticate", AuthenticationController, :authenticate
     end
+
+    resources "/users", UserController
   end
 
   # Other scopes may use custom stacks.

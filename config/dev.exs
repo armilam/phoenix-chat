@@ -35,8 +35,7 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :phoenix_chat, PhoenixChat.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "armilam",
   database: "phoenix_chat_dev",
   hostname: "localhost",
   pool_size: 10
