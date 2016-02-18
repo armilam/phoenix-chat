@@ -17,6 +17,11 @@ defmodule PhoenixChat.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+
+    scope "/login" do
+      get "/", AuthenticationController, :index
+      post "/authenticate", AuthenticationController, :authenticate
+    end
   end
 
   # Other scopes may use custom stacks.
